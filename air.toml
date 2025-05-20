@@ -1,0 +1,22 @@
+# air.toml
+
+# Putanja do glavnog fajla (entry point)
+cmd = "go run main.go"
+
+# Radni direktorijum (možeš ostaviti kao ".")
+root = "."
+
+# Uključi watch na sve foldere osim onih koje ignorišemo
+include_ext = ["go", "tpl", "tmpl", "html"]
+
+# Izuzmi određene foldere
+exclude_dir = ["vendor", "node_modules", "tmp", "bin"]
+
+# Lokacija gde se build fajl čuva (ako koristiš go build)
+tmp_dir = "tmp"
+
+# Omogući clear terminala na svakom reloadu
+clear_log = true
+
+# Pokaži vreme reloadovanja
+log_time = true
