@@ -12,4 +12,6 @@ func RegisterBookRoutes(app *fiber.App) {
 
 	books.Get("/", handlers.GetBooks)
 	books.Post("/", handlers.CreateBook)
+	books.Patch("/:inv_number", handlers.UpdateBook)
+	books.Delete("/:inv_number", handlers.DeleteBook)
 }
